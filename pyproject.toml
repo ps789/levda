@@ -10,8 +10,10 @@ requires-python = ">=3.10"
 dependencies = ["numpy>=1.24,<2", "torch>=2.1"]
 
 [tool.setuptools.packages.find]
-include = ["levda_core*", "kolmogorov_flow*", "planetswe*"]
+include = ["levda_core*", "kolmogorov_flow*", "planetswe*", "shallow_water*"]
+exclude = ["shallow_water.shallow_water*"]
 
 [tool.setuptools.package-data]
 kolmogorov_flow = ["data/*.pth", "saved_model/*.ckpt", "saved_model/*.npz", "*.json", "README.md"]
 planetswe = ["data/*.pth", "saved_model/*.ckpt", "saved_model/*.npz", "*.json", "README.md"]
+shallow_water = ["data/*.pth", "saved_model/*.ckpt", "README.md"]

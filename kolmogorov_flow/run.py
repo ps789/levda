@@ -7,6 +7,7 @@ if __package__ in (None, ""):
     sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from levda_core.runner import run
+from kolmogorov_flow.problem import PROBLEM
 
 if __name__ == "__main__":
-    run("kolmogorov_flow")
+    run(PROBLEM)

@@ -1,0 +1,24 @@
+{
+  "python": "/work2/phillip/anaconda3/envs/swe_era5/bin/python",
+  "wheel_bytes": 158621706,
+  "wheel_sha256": "21317ae43c1ce11fe517fcce19d3cf34e56101184cdbb88d6980b338916bdacc",
+  "all_three_problem_packages_included": true,
+  "legacy_shallow_water_code_excluded": true,
+  "central_problem_presets_removed": true,
+  "all_assets_equal_source_sha256": {
+    "kolmogorov_flow/data/sample_data.pth": "453c57c3a9ef607118675f89991f0b4e36c8daf890943a730b6a5fc65a18bd26",
+    "kolmogorov_flow/saved_model/dyn_1999.ckpt": "a1a0e86879ee9aa49919bc81960b586b2f65e5f7da7abc0fc023d48ee98393ff",
+    "kolmogorov_flow/saved_model/mean_std.npz": "57b16d9cef868eae89e12d885e6af7bcd05ec2b243fec64dbf48c0faaebad745",
+    "kolmogorov_flow/saved_model/retrained_rec_1999.ckpt": "c0a3902f45b0d3f3c4dcda1b4790fe22c38d3471d5d3c113b7a2a552beaac886",
+    "planetswe/data/sample_data.pth": "5c7efee110d4bbb601cdd64dc21ef0c234d03b3ddf3bc3d55a3d3abbc24856f3",
+    "planetswe/saved_model/dyn_1799.ckpt": "4a1e78c65a38168d7153aae6679647120a40418bda352020d8e44c087fdea324",
+    "planetswe/saved_model/mean_std.npz": "a3baf5dfc2fb2527b6acd99b00ea525da5a75dee9852b2e44d44e6a74a8f4fe0",
+    "planetswe/saved_model/rec_1799.ckpt": "9af7a178adc65b0f9106a480db7b3ca91728bea25c7f430f1f27d528889e5187",
+    "shallow_water/data/sample_data.pth": "49a3394b062ea819fe83cf79464d0063507f58666e0b6224fef4f20d00c7764f",
+    "shallow_water/saved_model/dyn_1999.ckpt": "8c492065109d699b3ed4935200baa03642acaa8b15cd063c24de1fa4b79d6fd3",
+    "shallow_water/saved_model/retrained_rec_1999.ckpt": "a0e29b0c7dffbd87f56c8aa935f45ee1b8faf9ae8a602a11c28885e22843292b"
+  },
+  "isolated_installed_wheel_run": true,
+  "stdout": "kolmogorov_flow installed assets verified\nplanetswe installed assets verified\nshallow_water installed assets verified\nshallow_water: 3 steps, 3 members, 1 L-BFGS iterations, lr=0.1, device=cpu\ninitialization 1: mean relative RMSE=0.23500264, final=0.18855593, mean SER=1.12941790, time=3.75s\ninitialization 2: mean relative RMSE=0.39844474, final=0.28575432, mean SER=0.47867224, time=2.93s\nAverage relative RMSE over 2 initialization(s): 0.31672369\n  2/2 finite initialization means; no reruns\nAverage SER over 2 initialization(s): 0.80404507\n  2/2 finite initialization means; no reruns\n",
+  "passed": true
+}

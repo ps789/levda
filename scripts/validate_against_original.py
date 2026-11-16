@@ -29,8 +29,12 @@ import torch
 
 from levda_core.assimilation import assimilate
 from levda_core.metrics import evaluate_ensemble
-from levda_core.problems import PROBLEMS
 from levda_core.runner import load_data, load_model, prepare_observations, set_seed
+from kolmogorov_flow.problem import PROBLEM as KOLMOGOROV
+from planetswe.problem import PROBLEM as PLANETSWE
+
+
+PROBLEMS = {problem.name: problem for problem in (KOLMOGOROV, PLANETSWE)}
 
 
 @contextmanager
@@ -79,6 +83,10 @@ def validate(name, seed, args):
         torch.testing.assert_close(data[key], original, rtol=0, atol=0)
     del source_data
     device = torch.device(args.device)
+    # DeepXDE allocates on the current CUDA device by default. Keep the reference
+    # and checkpoint copies on the requested device, including nonzero GPU IDs.
+    if device.type == "cuda":
+        torch.cuda.set_device(device)
     module_folder = args.original_root / "kolmogorov_flow" if name == "kolmogorov_flow" else args.original_root
     with original_modules(module_folder) as module:
         original_model = module.ResFourierLDNN(
@@ -89,6 +97,10 @@ def validate(name, seed, args):
         path = Path(manifest["checkpoints"][filename]["source"])
         getattr(original_model, component).load_state_dict(torch.load(path, map_location=device, weights_only=True))
     model = load_model(problem, device)
+    for component in ("dyn", "rec"):
+        clean_weights = getattr(model, component).state_dict()
+        for key, value in getattr(original_model, component).state_dict().items():
+            compare(clean_weights[key], value, f"{component} checkpoint: {key}", 0, 0)
     model_data = {key: data[key].to(device) for key in ("x", "u", "dt")}
     checks = {}
     with torch.no_grad():
