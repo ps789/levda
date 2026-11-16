@@ -37,8 +37,3 @@ For a short installation check rather than a full benchmark:
 ```bash
 python -m planetswe.run --device cpu --max-steps 3 --ensemble-size 3 --max-iter 1
 ```
-
-Changing these settings changes the experiment; use the defaults to reproduce
-the original entry points. `--decode-chunk-size 4096` limits physical-grid
-reconstruction memory. It does not split or change the assimilation loss.
-Use `--decode-chunk-size 0` for the original monolithic full-grid decode.
