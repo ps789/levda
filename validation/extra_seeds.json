@@ -1,0 +1,514 @@
+{
+  "torch": "2.1.0+cu121",
+  "device": "cuda:1",
+  "results": [
+    {
+      "problem": "kolmogorov_flow",
+      "seed": 43,
+      "steps": 8,
+      "ensemble_shape": [
+        20,
+        8,
+        22500,
+        2
+      ],
+      "configuration": {
+        "grid_shape": [
+          150,
+          150
+        ],
+        "observation_stride": 15,
+        "ensemble_size": 20,
+        "smoothing_steps": 5,
+        "max_iter": 10,
+        "learning_rate": 0.1,
+        "parameter_offset": 1.0,
+        "initial_parameter_noise": 0.2,
+        "state_inflation": 0.0007,
+        "parameter_inflation": 0.001,
+        "observation_weight": 100.0,
+        "current_observation_uses_background": true,
+        "gradient_clip": null,
+        "clear_model_grads_each_closure": false
+      },
+      "checks": {
+        "unassimilated_latent_max_abs_error": 0.0,
+        "decoder_probe_max_abs_error": 0.0,
+        "observation_max_abs_error": 0.0,
+        "assimilation_latent_max_abs_error": 0.0,
+        "decoded_ensemble_max_abs_error": 0.0,
+        "relative_rmse_max_abs_error": 0.0,
+        "ser_max_abs_error": 0.0,
+        "member_rms_relative_rmse_max_abs_error": 0.0,
+        "original_script_metric_max_abs_error": 0.0
+      },
+      "passed": true,
+      "original_seconds": 4.384332686662674,
+      "clean_seconds": 3.6767582297325134,
+      "clean_decode_chunk_size": 4096,
+      "metrics": {
+        "relative_rmse": {
+          "original_mean": 0.02578756958246231,
+          "clean_mean": 0.02578756958246231,
+          "original_final": 0.010902702808380127,
+          "clean_final": 0.010902702808380127,
+          "original_curve": [
+            0.031330406665802,
+            0.03326358646154404,
+            0.02853296883404255,
+            0.02760796993970871,
+            0.044432803988456726,
+            0.017557736486196518,
+            0.012672374956309795,
+            0.010902702808380127
+          ],
+          "clean_curve": [
+            0.031330406665802,
+            0.03326358646154404,
+            0.02853296883404255,
+            0.02760796993970871,
+            0.044432803988456726,
+            0.017557736486196518,
+            0.012672374956309795,
+            0.010902702808380127
+          ]
+        },
+        "ser": {
+          "original_mean": 0.6914725303649902,
+          "clean_mean": 0.6914725303649902,
+          "original_final": 1.007361888885498,
+          "clean_final": 1.007361888885498,
+          "original_curve": [
+            0.3463965058326721,
+            0.3286037743091583,
+            0.3289265036582947,
+            0.29785287380218506,
+            0.9439700841903687,
+            1.2331637144088745,
+            1.0455048084259033,
+            1.007361888885498
+          ],
+          "clean_curve": [
+            0.3463965058326721,
+            0.3286037743091583,
+            0.3289265036582947,
+            0.29785287380218506,
+            0.9439700841903687,
+            1.2331637144088745,
+            1.0455048084259033,
+            1.007361888885498
+          ]
+        },
+        "member_rms_relative_rmse": {
+          "original_mean": 0.031225180253386497,
+          "clean_mean": 0.031225180253386497,
+          "original_final": 0.015475612133741379,
+          "clean_final": 0.015475612133741379,
+          "original_curve": [
+            0.03315684571862221,
+            0.03501346707344055,
+            0.030036862939596176,
+            0.028806587681174278,
+            0.061102453619241714,
+            0.027875877916812897,
+            0.018333736807107925,
+            0.015475612133741379
+          ],
+          "clean_curve": [
+            0.03315684571862221,
+            0.03501346707344055,
+            0.030036862939596176,
+            0.028806587681174278,
+            0.061102453619241714,
+            0.027875877916812897,
+            0.018333736807107925,
+            0.015475612133741379
+          ]
+        }
+      },
+      "original_script_metric": "relative_rmse",
+      "data_verified_against_original": true
+    },
+    {
+      "problem": "kolmogorov_flow",
+      "seed": 44,
+      "steps": 8,
+      "ensemble_shape": [
+        20,
+        8,
+        22500,
+        2
+      ],
+      "configuration": {
+        "grid_shape": [
+          150,
+          150
+        ],
+        "observation_stride": 15,
+        "ensemble_size": 20,
+        "smoothing_steps": 5,
+        "max_iter": 10,
+        "learning_rate": 0.1,
+        "parameter_offset": 1.0,
+        "initial_parameter_noise": 0.2,
+        "state_inflation": 0.0007,
+        "parameter_inflation": 0.001,
+        "observation_weight": 100.0,
+        "current_observation_uses_background": true,
+        "gradient_clip": null,
+        "clear_model_grads_each_closure": false
+      },
+      "checks": {
+        "unassimilated_latent_max_abs_error": 0.0,
+        "decoder_probe_max_abs_error": 0.0,
+        "observation_max_abs_error": 0.0,
+        "assimilation_latent_max_abs_error": 0.0,
+        "decoded_ensemble_max_abs_error": 0.0,
+        "relative_rmse_max_abs_error": 0.0,
+        "ser_max_abs_error": 0.0,
+        "member_rms_relative_rmse_max_abs_error": 0.0,
+        "original_script_metric_max_abs_error": 0.0
+      },
+      "passed": true,
+      "original_seconds": 3.965998139232397,
+      "clean_seconds": 3.594292689114809,
+      "clean_decode_chunk_size": 4096,
+      "metrics": {
+        "relative_rmse": {
+          "original_mean": 0.05025884509086609,
+          "clean_mean": 0.05025884509086609,
+          "original_final": 0.2612670361995697,
+          "clean_final": 0.2612670361995697,
+          "original_curve": [
+            0.026094766333699226,
+            0.029756279662251472,
+            0.02677631936967373,
+            0.023343998938798904,
+            0.016371654346585274,
+            0.009539022110402584,
+            0.0089216697961092,
+            0.2612670361995697
+          ],
+          "clean_curve": [
+            0.026094766333699226,
+            0.029756279662251472,
+            0.02677631936967373,
+            0.023343998938798904,
+            0.016371654346585274,
+            0.009539022110402584,
+            0.0089216697961092,
+            0.2612670361995697
+          ]
+        },
+        "ser": {
+          "original_mean": 0.7417166829109192,
+          "clean_mean": 0.7417166829109192,
+          "original_final": 1.7925119400024414,
+          "clean_final": 1.7925119400024414,
+          "original_curve": [
+            0.26320818066596985,
+            0.2601049542427063,
+            0.2627098262310028,
+            0.3006030321121216,
+            0.24974146485328674,
+            0.4087998867034912,
+            2.396054267883301,
+            1.7925119400024414
+          ],
+          "clean_curve": [
+            0.26320818066596985,
+            0.2601049542427063,
+            0.2627098262310028,
+            0.3006030321121216,
+            0.24974146485328674,
+            0.4087998867034912,
+            2.396054267883301,
+            1.7925119400024414
+          ]
+        },
+        "member_rms_relative_rmse": {
+          "original_mean": 0.08705084025859833,
+          "clean_mean": 0.08705084025859833,
+          "original_final": 0.5362723469734192,
+          "clean_final": 0.5362723469734192,
+          "original_curve": [
+            0.026983534917235374,
+            0.03074638545513153,
+            0.02768491394817829,
+            0.024375896900892258,
+            0.016874492168426514,
+            0.010305308736860752,
+            0.023163851350545883,
+            0.5362723469734192
+          ],
+          "clean_curve": [
+            0.026983534917235374,
+            0.03074638545513153,
+            0.02768491394817829,
+            0.024375896900892258,
+            0.016874492168426514,
+            0.010305308736860752,
+            0.023163851350545883,
+            0.5362723469734192
+          ]
+        }
+      },
+      "original_script_metric": "relative_rmse",
+      "data_verified_against_original": true
+    },
+    {
+      "problem": "planetswe",
+      "seed": 43,
+      "steps": 8,
+      "ensemble_shape": [
+        20,
+        8,
+        131072,
+        3
+      ],
+      "configuration": {
+        "grid_shape": [
+          512,
+          256
+        ],
+        "observation_stride": 32,
+        "ensemble_size": 20,
+        "smoothing_steps": 5,
+        "max_iter": 10,
+        "learning_rate": 0.001,
+        "parameter_offset": 0.2,
+        "initial_parameter_noise": 0.05,
+        "state_inflation": 0.006,
+        "parameter_inflation": 0.001,
+        "observation_weight": 1.0,
+        "current_observation_uses_background": false,
+        "gradient_clip": 1.0,
+        "clear_model_grads_each_closure": true
+      },
+      "checks": {
+        "unassimilated_latent_max_abs_error": 0.0,
+        "decoder_probe_max_abs_error": 0.0,
+        "observation_max_abs_error": 0.0,
+        "assimilation_latent_max_abs_error": 0.0,
+        "decoded_ensemble_max_abs_error": 0.0,
+        "relative_rmse_max_abs_error": 0.0,
+        "ser_max_abs_error": 0.0,
+        "member_rms_relative_rmse_max_abs_error": 0.0,
+        "original_script_metric_max_abs_error": 0.0
+      },
+      "passed": true,
+      "original_seconds": 14.272048499435186,
+      "clean_seconds": 14.00834458321333,
+      "clean_decode_chunk_size": 4096,
+      "metrics": {
+        "relative_rmse": {
+          "original_mean": 0.04162381961941719,
+          "clean_mean": 0.04162381961941719,
+          "original_final": 0.03334066644310951,
+          "clean_final": 0.03334066644310951,
+          "original_curve": [
+            0.06887435168027878,
+            0.05110698938369751,
+            0.040251683443784714,
+            0.036646775901317596,
+            0.034740328788757324,
+            0.03363460302352905,
+            0.034395162016153336,
+            0.03334066644310951
+          ],
+          "clean_curve": [
+            0.06887435168027878,
+            0.05110698938369751,
+            0.040251683443784714,
+            0.036646775901317596,
+            0.034740328788757324,
+            0.03363460302352905,
+            0.034395162016153336,
+            0.03334066644310951
+          ]
+        },
+        "ser": {
+          "original_mean": 0.7063089609146118,
+          "clean_mean": 0.7063089609146118,
+          "original_final": 0.5017279386520386,
+          "clean_final": 0.5017279386520386,
+          "original_curve": [
+            0.31631073355674744,
+            0.47752436995506287,
+            0.6413952112197876,
+            0.8462739586830139,
+            1.0050153732299805,
+            1.0026960372924805,
+            0.859527587890625,
+            0.5017279386520386
+          ],
+          "clean_curve": [
+            0.31631073355674744,
+            0.47752436995506287,
+            0.6413952112197876,
+            0.8462739586830139,
+            1.0050153732299805,
+            1.0026960372924805,
+            0.859527587890625,
+            0.5017279386520386
+          ]
+        },
+        "member_rms_relative_rmse": {
+          "original_mean": 0.05053018033504486,
+          "clean_mean": 0.05053018033504486,
+          "original_final": 0.03730180859565735,
+          "clean_final": 0.03730180859565735,
+          "original_curve": [
+            0.07223774492740631,
+            0.05663496255874634,
+            0.04781974107027054,
+            0.04800838232040405,
+            0.049253590404987335,
+            0.0476306676864624,
+            0.04535452276468277,
+            0.03730180859565735
+          ],
+          "clean_curve": [
+            0.07223774492740631,
+            0.05663496255874634,
+            0.04781974107027054,
+            0.04800838232040405,
+            0.049253590404987335,
+            0.0476306676864624,
+            0.04535452276468277,
+            0.03730180859565735
+          ]
+        }
+      },
+      "original_script_metric": "member_rms_relative_rmse",
+      "data_verified_against_original": true
+    },
+    {
+      "problem": "planetswe",
+      "seed": 44,
+      "steps": 8,
+      "ensemble_shape": [
+        20,
+        8,
+        131072,
+        3
+      ],
+      "configuration": {
+        "grid_shape": [
+          512,
+          256
+        ],
+        "observation_stride": 32,
+        "ensemble_size": 20,
+        "smoothing_steps": 5,
+        "max_iter": 10,
+        "learning_rate": 0.001,
+        "parameter_offset": 0.2,
+        "initial_parameter_noise": 0.05,
+        "state_inflation": 0.006,
+        "parameter_inflation": 0.001,
+        "observation_weight": 1.0,
+        "current_observation_uses_background": false,
+        "gradient_clip": 1.0,
+        "clear_model_grads_each_closure": true
+      },
+      "checks": {
+        "unassimilated_latent_max_abs_error": 0.0,
+        "decoder_probe_max_abs_error": 0.0,
+        "observation_max_abs_error": 0.0,
+        "assimilation_latent_max_abs_error": 0.0,
+        "decoded_ensemble_max_abs_error": 0.0,
+        "relative_rmse_max_abs_error": 0.0,
+        "ser_max_abs_error": 0.0,
+        "member_rms_relative_rmse_max_abs_error": 0.0,
+        "original_script_metric_max_abs_error": 0.0
+      },
+      "passed": true,
+      "original_seconds": 14.301520574837923,
+      "clean_seconds": 14.04183266311884,
+      "clean_decode_chunk_size": 4096,
+      "metrics": {
+        "relative_rmse": {
+          "original_mean": 0.040728673338890076,
+          "clean_mean": 0.040728673338890076,
+          "original_final": 0.03520955890417099,
+          "clean_final": 0.03520955890417099,
+          "original_curve": [
+            0.06454972922801971,
+            0.04485325515270233,
+            0.037315379828214645,
+            0.036538247019052505,
+            0.03581449016928673,
+            0.03568270802497864,
+            0.035866037011146545,
+            0.03520955890417099
+          ],
+          "clean_curve": [
+            0.06454972922801971,
+            0.04485325515270233,
+            0.037315379828214645,
+            0.036538247019052505,
+            0.03581449016928673,
+            0.03568270802497864,
+            0.035866037011146545,
+            0.03520955890417099
+          ]
+        },
+        "ser": {
+          "original_mean": 0.7926050424575806,
+          "clean_mean": 0.7926050424575806,
+          "original_final": 0.5110024809837341,
+          "clean_final": 0.5110024809837341,
+          "original_curve": [
+            0.3326089680194855,
+            0.6560162305831909,
+            0.7545481324195862,
+            0.891866147518158,
+            1.0619171857833862,
+            1.1360100507736206,
+            0.9968714714050293,
+            0.5110024809837341
+          ],
+          "clean_curve": [
+            0.3326089680194855,
+            0.6560162305831909,
+            0.7545481324195862,
+            0.891866147518158,
+            1.0619171857833862,
+            1.1360100507736206,
+            0.9968714714050293,
+            0.5110024809837341
+          ]
+        },
+        "member_rms_relative_rmse": {
+          "original_mean": 0.05172537639737129,
+          "clean_mean": 0.05172537639737129,
+          "original_final": 0.039540257304906845,
+          "clean_final": 0.039540257304906845,
+          "original_curve": [
+            0.06802661716938019,
+            0.053643371909856796,
+            0.046746257692575455,
+            0.048958852887153625,
+            0.052240900695323944,
+            0.05400383099913597,
+            0.05064293369650841,
+            0.039540257304906845
+          ],
+          "clean_curve": [
+            0.06802661716938019,
+            0.053643371909856796,
+            0.046746257692575455,
+            0.048958852887153625,
+            0.052240900695323944,
+            0.05400383099913597,
+            0.05064293369650841,
+            0.039540257304906845
+          ]
+        }
+      },
+      "original_script_metric": "member_rms_relative_rmse",
+      "data_verified_against_original": true
+    }
+  ]
+}

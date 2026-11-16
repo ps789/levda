@@ -1,0 +1,52 @@
+{
+  "original_entrypoint": "/work2/phillip/latent-assimilation/planetswe/test_batch_average_ensemble_voda.py",
+  "original_data": "/work/pengpeng/data-assimilation/planetswe/saved_model/parameter_shuf_t21d/observation_32.pth",
+  "trajectory_index": 0,
+  "all_sample_tensors_equal_original": true,
+  "sample_sha256": "5c7efee110d4bbb601cdd64dc21ef0c234d03b3ddf3bc3d55a3d3abbc24856f3",
+  "sample_bytes": 165152752,
+  "shapes": {
+    "x": [
+      1,
+      63,
+      131072,
+      2
+    ],
+    "u": [
+      1,
+      2
+    ],
+    "y": [
+      1,
+      63,
+      131072,
+      3
+    ],
+    "dt": []
+  },
+  "checkpoints": {
+    "dyn_1799.ckpt": {
+      "source": "/work/pengpeng/data-assimilation/planetswe/saved_model/parameter_shuf_t21d/dyn_1799.ckpt",
+      "sha256": "4a1e78c65a38168d7153aae6679647120a40418bda352020d8e44c087fdea324"
+    },
+    "rec_1799.ckpt": {
+      "source": "/work/pengpeng/data-assimilation/planetswe/saved_model/parameter_shuf_t21d/rec_1799.ckpt",
+      "sha256": "9af7a178adc65b0f9106a480db7b3ca91728bea25c7f430f1f27d528889e5187"
+    }
+  },
+  "normalization_source": "/work/pengpeng/data-assimilation/planetswe/saved_model/parameter_shuf_t21d/mean_std.npz",
+  "normalization_sha256": "a3baf5dfc2fb2527b6acd99b00ea525da5a75dee9852b2e44d44e6a74a8f4fe0",
+  "normalization": {
+    "mean": [
+      -1.528167376818601e-05,
+      0.0020594859961420298,
+      -6.800227083658683e-07
+    ],
+    "std": [
+      4.8280951887136325e-05,
+      0.006113690789788961,
+      0.002807618584483862
+    ]
+  },
+  "note": "One full-length test trajectory; no training/validation data or auxiliary encoders included."
+}

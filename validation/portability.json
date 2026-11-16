@@ -1,0 +1,31 @@
+{
+  "python": "/work2/phillip/anaconda3/envs/swe_era5/bin/python",
+  "results": [
+    {
+      "problem": "kolmogorov_flow",
+      "isolated_python": true,
+      "device": "cpu",
+      "steps": 2,
+      "members": 3,
+      "max_iter": 1,
+      "initializations": 2,
+      "ran_from_unrelated_working_directory": true,
+      "original_tree_not_copied": true,
+      "stdout": "kolmogorov_flow: 2 steps, 3 members, 1 L-BFGS iterations, lr=0.1, device=cpu\ninitialization 1: mean relative RMSE=0.02428880, final=0.02891571, mean SER=0.18670115, time=7.54s\ninitialization 2: mean relative RMSE=0.03100543, final=0.03688189, mean SER=0.22214678, time=6.71s\nAverage relative RMSE over 2 initialization(s): 0.02764712\nAverage SER over 2 initialization(s): 0.20442396\n",
+      "passed": true
+    },
+    {
+      "problem": "planetswe",
+      "isolated_python": true,
+      "device": "cpu",
+      "steps": 2,
+      "members": 3,
+      "max_iter": 1,
+      "initializations": 2,
+      "ran_from_unrelated_working_directory": true,
+      "original_tree_not_copied": true,
+      "stdout": "planetswe: 2 steps, 3 members, 1 L-BFGS iterations, lr=0.001, device=cpu\ninitialization 1: mean relative RMSE=0.05160170, final=0.04694439, mean SER=0.47040975, time=43.61s\n  original-script member-RMS relative RMSE=0.05713472\ninitialization 2: mean relative RMSE=0.06545646, final=0.05635298, mean SER=0.37429097, time=43.21s\n  original-script member-RMS relative RMSE=0.06980487\nAverage relative RMSE over 2 initialization(s): 0.05852908\nAverage SER over 2 initialization(s): 0.42235038\n",
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "wheel": "levda_review-0.1.0-py3-none-any.whl",
+  "wheel_bytes": 144573180,
+  "required_files_present": [
+    "levda_core/assimilation.py",
+    "kolmogorov_flow/run.py",
+    "planetswe/run.py",
+    "kolmogorov_flow/data/sample_data.pth",
+    "planetswe/data/sample_data.pth",
+    "kolmogorov_flow/saved_model/dyn_1999.ckpt",
+    "kolmogorov_flow/saved_model/retrained_rec_1999.ckpt",
+    "planetswe/saved_model/dyn_1799.ckpt",
+    "planetswe/saved_model/rec_1799.ckpt",
+    "kolmogorov_flow/saved_model/mean_std.npz",
+    "planetswe/saved_model/mean_std.npz"
+  ],
+  "source_tree_unmodified_by_build": true
+}

@@ -1,0 +1,50 @@
+{
+  "original_entrypoint": "/work2/phillip/latent-assimilation/kolmogorov_flow/plot_resnet_data_lbfgs_kolmogorov_ensemble.py",
+  "original_data": "/work/pengpeng/data-assimilation/kolmogorov_flow/data/data_observation_500_1500_150x150_seed_0_resnet_fourier_10_gamma_0.5_resd_14.pth",
+  "trajectory_index": 0,
+  "all_sample_tensors_equal_original": true,
+  "sample_sha256": "453c57c3a9ef607118675f89991f0b4e36c8daf890943a730b6a5fc65a18bd26",
+  "sample_bytes": 14402032,
+  "shapes": {
+    "x": [
+      1,
+      40,
+      22500,
+      2
+    ],
+    "u": [
+      1,
+      1
+    ],
+    "y": [
+      1,
+      40,
+      22500,
+      2
+    ],
+    "dt": []
+  },
+  "checkpoints": {
+    "dyn_1999.ckpt": {
+      "source": "/work/pengpeng/data-assimilation/kolmogorov_flow/saved_model/cplx_Re500_1500_150x150_resnet_fourier_10_gamma_0.5_resd_14/dyn_1999.ckpt",
+      "sha256": "a1a0e86879ee9aa49919bc81960b586b2f65e5f7da7abc0fc023d48ee98393ff"
+    },
+    "retrained_rec_1999.ckpt": {
+      "source": "/work/pengpeng/data-assimilation/kolmogorov_flow/saved_model/cplx_Re500_1500_150x150_resnet_fourier_10_gamma_0.5_resd_14/retrained_rec_1999.ckpt",
+      "sha256": "c0a3902f45b0d3f3c4dcda1b4790fe22c38d3471d5d3c113b7a2a552beaac886"
+    }
+  },
+  "normalization_source": "/work/pengpeng/data-assimilation/kolmogorov_flow/saved_model/cplx_Re500_1500_150x150/mean_std.npz",
+  "normalization_sha256": "57b16d9cef868eae89e12d885e6af7bcd05ec2b243fec64dbf48c0faaebad745",
+  "normalization": {
+    "mean": [
+      -4.9165194582201366e-08,
+      1.6276041625573612e-09
+    ],
+    "std": [
+      0.9715291261672974,
+      0.962863028049469
+    ]
+  },
+  "note": "One full-length test trajectory; no training/validation data or auxiliary encoders included."
+}

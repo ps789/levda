@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "levda-review"
+version = "0.1.0"
+description = "Minimal LEVDA inference examples for geophysical data assimilation"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24,<2", "torch>=2.1"]
+
+[tool.setuptools.packages.find]
+include = ["levda_core*", "kolmogorov_flow*", "planetswe*"]
+
+[tool.setuptools.package-data]
+kolmogorov_flow = ["data/*.pth", "saved_model/*.ckpt", "saved_model/*.npz", "*.json", "README.md"]
+planetswe = ["data/*.pth", "saved_model/*.ckpt", "saved_model/*.npz", "*.json", "README.md"]
